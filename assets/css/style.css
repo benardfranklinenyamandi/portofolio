@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:black;
+    padding: 20px 42px;
+    
+}
+body{
+    background-color:grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    
+}
+.navbar .brand{
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    margin-right: 1000px;
+    
+}
+.navitems{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navitems li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin-right: 100px;
+}
+.heroimage{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+img{
+    min-height: 100vh;
+}
+.cont h1{
+    font-size:72px;
+    font-weight: bolder;
+    color:black;
+    
+}
+.cont p{
+    font-size:26px;
+    font-weight: normal;
+    color: white;
+
+}
+.about .title{
+    
+    padding: 24px 42px;
+    
+
+}
+.title h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 62px;
+    margin-bottom: 25px;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    gap: 50px;
+}
+.content h2{
+    font-size: 42px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+.content p{
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: white;
+}
+.container img{
+    padding: 24px 42px;
+    min-height: 100vh;
+}
+.list{
+    list-style: none;
+    
+}
+.list li{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.contacttitle{
+    
+    text-align: center;
+    text-decoration: underline;
+    font-size: 62px;
+    margin-bottom: 25px;
+}
+.contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.contactform{
+    min-height: 75vh;
+    
+}
+.contactinfo{
+    padding:24px 42px;
+    background: beige;
+    
+}
+.contactinfo .address{
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+.contactinfo .call{
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+.contactinfo .email{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.contactform{
+    background: beige;
+    padding: 24px 42px;
+}
+.forminfo .name{
+    margin-bottom: 45px;
+}
+.forminfo .email{
+    margin-bottom: 45px;
+}
+.forminfo .subject{
+    margin-bottom: 42px;
+}
+.forminfo .message{
+    margin-bottom: 45px;
+}
+.forminfo .button{
+    text-align: center;
+}
+.name label{
+    font-size: 25px;
+}
+.name input{
+    color:white;
+    font-size: 25px;
+    border: none;
+}
+.email label{
+    font-size: 25px;
+}
+.email input{
+    color:white;
+    font-size: 25px;
+    border: none;
+}
+.subject label{
+    font-size: 25px;
+}
+.subject input{
+    color:white;
+    font-size: 25px;
+    border: none;
+}
+.message label{
+    font-size:25px;
+}
+.message input{
+    color:white;
+    font-size: 25px;
+    border: none;
+    width: 75%;
+    height: 75%;
+}
+.button button{
+    padding:15px;
+    background: blue;
+    border: none;
+    color: black;
+    border-radius: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    transition:  all 0.3s  ease;
+}
+.button button:hover{
+    background: lightgray;
+}
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .heroimage {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cont h1 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navitems {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .heropage {
+        padding: 40px 20px;
+    }
+
+    .cont h1 {
+        font-size: 28px;
+    }
+
+    .cont p {
+        font-size: 14px;
+    }
+}
