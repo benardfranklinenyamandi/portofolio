@@ -3,109 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Nyamandi Benard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body style="background: white;">
+<body> <!-- Removed inline style—put in CSS -->
 
-     <div class="navbar">
+    <nav class="navbar">
         <div class="brand">Nyamandi Benard</div>
-        <div class="navitem">
-            <ul class="navitems">
-                <li><a href="index.html">Home</a></li>
-                
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Contact</a></li>
+        <ul class="navitems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
 
-            </ul>
-        </div>
-    </div>
+    <main>
+        <header class="contacttitle">
+            <h1>Contact Me</h1>
+        </header>
 
-      
-      
-      <div class="contacttitle" >
-        <h2>Contact</h2>
-      </div>
-                  
-      <div class="contact">
+        <section class="contact">
+            <div class="contactinfo">
+                <div class="contact-item">
+                    <h3><i class="fa-solid fa-location-pin"></i> Address</h3>
+                    <p>Imara Daima Estate, Imara, Nairobi</p>
+                </div>
 
-                    <div class="contactinfo">
-                            
-                            
-                                <div class="address">
+                <div class="contact-item">
+                    <h3><i class="fa-solid fa-phone"></i> Call Me</h3>
+                    <p>+254 115 720 630</p>
+                </div>
 
-                                <h3> <i class="fa-solid fa-location-pin"></i>Address</h3>
-                                <p>Centre, Katani</p>
+                <div class="contact-item">
+                    <h3><i class="fa-solid fa-envelope"></i> Email Me</h3>
+                    <p>benardfranklinenyamandi@gmail.com</p>
 
-                                </div>
-                           
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.014086993646!2d36.879306!3d-1.3237454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f123cef3e30ad%3A0x3a6d8c2e357196b3!2sImara%20Daima%20Estate%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1770024296653!5m2!1sen!2ske"
+                        class="map"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Location: Imara Daima Estate, Nairobi">
+                    </iframe>
+                </div>
+            </div>
 
-                            <div class="call" >
-                                
-                                <h3> <i class="fa-solid fa-phone"></i>Call Us</h3>
-                                <p>+254 115720630</p>
-                            </div>
-                            
-
-                            <div class="email" >
-                                
-                                <h3> <i class="fa-solid fa-envelope"></i>Email Us</h3>
-                                <p>benardfranklinenyamandi@gmail.com</p>
-                                                                                        
-                           
-
-                                    <iframe 
-                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.014086993646!2d36.879306!3d-1.3237454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f123cef3e30ad%3A0x3a6d8c2e357196b3!2sImara%20Daima%20Estate%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1770024296653!5m2!1sen!2ske"
-                                            class="map"
-                                            loading="lazy"
-                                            referrerpolicy="no-referrer-when-downgrade">
-                                    </iframe>
-                            </div>
-                    </div>
-                        <div class="contactform">
-                            <form>
-                                                <div class="forminfo">
-
-                                                    <div class="name">
-                                                    <label class="">Name</label>
-                                                    <input type="text" required="">
-                                                    </div>
-
-                                                    <div class="email">
-                                                    <label>Email</label>
-                                                      <input type="text" required="">
-                                                    </div>
-
-                                                    <div class="subject">
-                                                    <label  class="">Subject</label>
-                                                    <input type="text" required="">
-                                                    </div>
-
-                                                    <div class="message">
-                                                    <label class="">Message</label>
-                                                    <textarea required=""></textarea>
-                                                    </div>
-
-                                                    <div class="button">
-                                                    
-
-                                                    <button type="submit">Send Message</button>
-                                                    </div>
-
-                                                </div>
-                            </form>
+            <div class="contactform">
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
-        </div>
-          
 
-        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
 
-      
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
 
-
-    
-
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
